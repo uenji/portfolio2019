@@ -51,7 +51,7 @@ $(document).ready(function(){
 	$(".port_box").addClass("m_port_box");
 	} else {
 	$(".port_box").removeClass("m_port_box");
-	$('.cont01 .snb ul').show();
+	// $('.cont01 .snb ul').show();
 	}
 
 	}).resize();
