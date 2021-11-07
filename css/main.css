@@ -93,11 +93,13 @@
 .cont02::after { clear: both; display: block; content: '';}
 .cont02 h3 { margin:0 auto; background:url("../images/cont02_tit.png") no-repeat; width:241px; height:31px; text-indent:-99999px; }
 .cont02 .ment { color: #fff; margin-top: 30px; text-align: center;}
-.cont02 .port_box { margin-top:60px; position: relative;}
+.cont02 .port_box { margin-top:60px; position: relative; overflow:hidden; width: 100%;}
+
 .cont02 .port_box li { float:left; width:380px; height:290px; margin:0 0 30px 30px; background:#fff; }
-.port_box .port {  position: relative; overflow: hidden;  width: 100%; background: #000; color: #fff; text-align: left; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+.cont02 .port_box li a {width: 100%; display: block; position: relative;height: 100%;}
+.port_box .port {  position: relative; overflow: hidden;  width: 100%; height: 100%; background: #000; color: #fff; text-align: left; box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
 .port * {  -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.35s ease-out; transition: all 0.35s ease-out; }
-.port img {vertical-align: top; }
+.port img {vertical-align: top;width: 100%;position: absolute;top: 50%;left: 50%;height: auto;transform: translate3d(-50%, -50%, 0);}
 .port i { position: absolute; left: 20px; bottom: 20px; font-size: 28px; color: #fff; width: 50px; height: 50px; line-height: 50px; z-index: 1; text-align: center; }
 .port figcaption {  position: absolute; top: 0; left: 0; padding: 35px 0 0 35px; z-index: 1; max-width: 250px; }
 .port h4,.port p,.port .type { opacity: 0; margin: 0 0 10px; }
@@ -145,7 +147,7 @@
 .btn_box a { border-radius:50px; font-size:17px; text-align:center; display:inline-block; margin-right:15px; margin-top:25px; box-sizing:border-box; border:3px solid #35a7fa; width:100%; height:48px; line-height:45px; color:#00daff; transition:.2s ease-in-out;}
 .btn_box a:hover { color:#333; font-style:italic; border:3px solid #fffff1; background:#fff;}
 
-
+	
 #footer {  background:#14083c; width:100%; height:110px; border-top:1px solid #410f70; }
 #footer p {text-align:center; color:#eee; font-size:17px; padding:46px 0 0;}
 
